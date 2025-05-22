@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity Dabha - Add Menu Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <div class="logo">
+            <h1>Amity Dhaba</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="landing.html#menu">Menu</a></li>
+                <li><a href="landing.html#about">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add_item.html" class="active">Add Item</a></li>
+
+            </ul>
+        </nav>
+    </header>
+	 <section class="add-item-section">
+    <div class="container">
+        <div class="admin-header">
+            <h2>Add New Menu Item</h2>
+            <p>Add new item to Dhaba's menu</p>
+        </div>
+
+        <div class="add-item-container">
+            <form class="add-item-form">
+                <div class="form-group">
+                    <label for="item-name">Item Name</label>
+                    <input type="text" id="item-name" name="item-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-category">Category</label>
+                    <select id="item-category" name="item-category" required>
+                        <option value="">Select a category</option>
+                        <option value="coffee">Coffee & Beverages</option>
+                        <option value="breakfast">Breakfast & Brunch</option>
+                        <option value="lunch">Lunch & Snacks</option>
+                        <option value="dessert">Desserts</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-description">Description</label>
+                    <textarea id="item-description" name="item-description" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-price">Price (Try to keep it fair)</label>
+                    <input type="number" id="item-price" name="item-price" step="0.01" min="0" placeholder="0.00" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-image">Image of Food</label>
+                    <input type="file" id="item-image" name="item-image" accept="image/*">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="item-veg" name="item-veg">
+                        <span class="checkmark"></span>
+                        Veg
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="item-non-veg" name="item-non-veg">
+                        <span class="checkmark"></span>
+                        Non-Veg
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-availability">Availability</label>
+                    <select id="item-availability" name="item-availability" required>
+                        <option value="always">Always Available</option>
+                        <option value="limited">Limited Time</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Add Item</button>
+                    <button type="reset" class="btn reset-btn">Reset Form</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="admin-links">
+            <a href="login.html" class="back-link">← Back to Login</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Amity Dabha</h2>
+                    <p>Amity's Chill zone</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="landing.html">Home</a></li>
+                        <li><a href="landing.html#menu">Menu</a></li>
+                        <li><a href="landing.html#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Amity Dhaba. If u trouble the trouble, Trouble will trouble you.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
